@@ -359,7 +359,7 @@ console.log(people); // you can remove it
 
 // write your code here
 
-const table = document.querySelector('.dashboard');
+const tbody = document.querySelector('.dashboard');
 
 people.forEach((person) => {
   const tr = document.createElement('tr');
@@ -399,5 +399,5 @@ people.forEach((person) => {
   centuryTd.textContent = Math.ceil(person.died / 100);
   tr.appendChild(centuryTd);
 
-  table.appendChild(tr);
+  tbody.appendChild(tr);
 });
